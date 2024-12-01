@@ -1,6 +1,7 @@
 package Model;
 
-public class Pessoa {
+
+public abstract class Pessoa {
     private String nome, email, telefone,CPF;
     public String getNome() {
         return nome;
@@ -16,6 +17,11 @@ public class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public void Cadastrar(){
+
     }
 
     public String getTelefone() {
@@ -34,8 +40,11 @@ public class Pessoa {
         this.CPF = CPF;
     }
 
-    public void Cadastrar(){
-    }
 
+    public abstract void registrar();
+
+    public abstract void exibirHistoricoReservas();
 }
+
+
 

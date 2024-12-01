@@ -1,6 +1,6 @@
 package Model;
 
-public class Funcionario extends Pessoa implements salario{
+public class Funcionario implements salario{
 
     private double horas, salario, total;
 
